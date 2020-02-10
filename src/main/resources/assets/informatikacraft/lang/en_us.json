@@ -1,0 +1,23 @@
+{
+#Items
+	"item.informatikacraft.amethyst": "Amethyst",
+
+#Blocks
+	"block.informatikacraft.amethyst_block": "Amethyst Block",
+	"block.informatikacraft.amethyst_ore": "Amethyst Ore",
+
+#Tools
+	"item.informatikacraft.amethyst_sword": "Amethyst sword",
+	"item.informatikacraft.amethyst_shovel": "Amethyst shovel",
+	"item.informatikacraft.amethyst_pickaxe": "Amethyst pickaxe",
+	"item.informatikacraft.amethyst_axe": "Amethyst axe",
+	"item.informatikacraft.amethyst_hoe": "Amethyst hoe",
+	"item.informatikacraft.amethyst_bow": "Amethyst bow",
+
+
+#Armor
+	"item.informatikacraft.amethyst_helmet": "Amethyst Helmet",
+	"item.informatikacraft.amethyst_chestplate": "Amethyst Chestplate",
+	"item.informatikacraft.amethyst_leggings": "Amethyst Leggings",
+	"item.informatikacraft.amethyst_boots": "Amethyst Boots"
+}

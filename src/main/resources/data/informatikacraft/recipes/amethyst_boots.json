@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "   ",
+        "R R",
+        "R R"
+    ],
+    
+    "key":
+    {
+        "R":
+        {
+            "item": "informatikacraft:amethyst"
+        }
+    },
+    
+    "result":
+    {
+        "item": "informatikacraft:amethyst_boots"
+	},
+        "count": 1
+    
+}
