@@ -7,6 +7,7 @@ import com.github.erce312.informatikacraft.entities.Reaper;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.LivingRenderer;
+import net.minecraft.client.renderer.entity.layers.HeldItemLayer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -16,8 +17,11 @@ import net.minecraftforge.fml.client.registry.IRenderFactory;
 public class ReaperRender extends LivingRenderer<Reaper, ReaperModel> 
 {
 
-	public ReaperRender(EntityRendererManager manager) {
+	public ReaperRender(EntityRendererManager manager) 
+	{
+
 		super(manager, new ReaperModel(), 0.5f);
+		this.addLayer(new HeldItemLayer<Reaper, ReaperModel>(this));
 	}
 
 	@Override
@@ -27,6 +31,7 @@ public class ReaperRender extends LivingRenderer<Reaper, ReaperModel>
 		return RegistryEvents.location("textures/entity/reaper.png");
 	}
 	
+
 	public static class RenderFactory implements IRenderFactory<Reaper>
 	{
 
@@ -34,7 +39,7 @@ public class ReaperRender extends LivingRenderer<Reaper, ReaperModel>
 		public EntityRenderer<? super Reaper> createRenderFor(EntityRendererManager manager) {
 			return new ReaperRender(manager);
 		}
-		
+
 	}
 
 }

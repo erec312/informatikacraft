@@ -19,5 +19,7 @@
 	"item.informatikacraft.amethyst_helmet": "Amethyst Helmet",
 	"item.informatikacraft.amethyst_chestplate": "Amethyst Chestplate",
 	"item.informatikacraft.amethyst_leggings": "Amethyst Leggings",
-	"item.informatikacraft.amethyst_boots": "Amethyst Boots"
+	"item.informatikacraft.amethyst_boots": "Amethyst Boots",
+#Entities
+	  "entity.informatikacrft.Reaper": "Reaper",
 }

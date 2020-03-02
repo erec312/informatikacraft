@@ -11,7 +11,6 @@ import com.github.erce312.informatikacraft.init.InformatikacraftEntities;
 import com.github.erce312.informatikacraft.init.InformatikacraftItems;
 import com.github.erce312.informatikacraft.init.InformatikacraftToolMaterials;
 import com.github.erce312.informatikacraft.itmes.CustomAxeItem;
-import com.github.erce312.informatikacraft.itmes.CustomBowItem;
 import com.github.erce312.informatikacraft.itmes.CustomPickaxeItem;
 import com.github.erce312.informatikacraft.world.MuggyWorldType;
 import com.github.erce312.informatikacraft.world.OreGeneration;
@@ -24,6 +23,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.BowItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -94,8 +94,8 @@ public class Informatikacraft
 				InformatikacraftItems.amethyst_pickaxe = new CustomPickaxeItem(InformatikacraftToolMaterials.amethyst, 1, -2.8f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("amethyst_pickaxe")),
 				InformatikacraftItems.amethyst_hoe = new HoeItem(InformatikacraftToolMaterials.amethyst, 0.0f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("amethyst_hoe")),
 				InformatikacraftItems.amethyst_shovel = new ShovelItem(InformatikacraftToolMaterials.amethyst, 1.5f, -3.0f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("amethyst_shovel")),
-				InformatikacraftItems.amethyst_sword = new SwordItem(InformatikacraftToolMaterials.amethyst, 3, -2.4f, new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("amethyst_sword")),
-				InformatikacraftItems.amethyst_bow = new CustomBowItem(new Item.Properties().defaultMaxDamage(1000).group(ItemGroup.TOOLS)).setRegistryName(location("amethyst_bow")),
+				InformatikacraftItems.amethyst_sword = new SwordItem(InformatikacraftToolMaterials.amethyst, -3, -2.4f,new Item.Properties().group(ItemGroup.TOOLS)).setRegistryName(location("amethyst_sword")),
+				InformatikacraftItems.amethyst_bow = new BowItem(new Item.Properties().defaultMaxDamage(1000).group(ItemGroup.TOOLS)).setRegistryName(location("amethyst_bow")),
 				//ARMOUR
 				InformatikacraftItems.amethyst_helmet = new ArmorItem(InformatikacraftArmorMaterials.amethyst, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("amethyst_helmet")),
 				InformatikacraftItems.amethyst_chestplate = new ArmorItem(InformatikacraftArmorMaterials.amethyst, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("amethyst_chestplate")),
@@ -103,13 +103,16 @@ public class Informatikacraft
 				InformatikacraftItems.amethyst_boots = new ArmorItem(InformatikacraftArmorMaterials.amethyst, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(location("amethyst_boots")),
 				//BLOCKS
 				InformatikacraftItems.amethyst_block = new BlockItem(InformatikacraftBlocks.amethyst_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("amethyst_block")),
-				InformatikacraftItems.amethyst_ore = new BlockItem(InformatikacraftBlocks.amethyst_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("amethyst_ore"))
-			);
+				InformatikacraftItems.amethyst_ore = new BlockItem(InformatikacraftBlocks.amethyst_ore, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(location("amethyst_ore")));
+
 			
 			InformatikacraftEntities.registerEntitySpawnEggs(event);
 			
 			LOGGER.info("Itmes registered");
 		}
+		
+		
+		
 		
 
 		

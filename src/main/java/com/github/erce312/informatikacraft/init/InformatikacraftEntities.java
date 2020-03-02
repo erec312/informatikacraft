@@ -16,7 +16,7 @@ import net.minecraftforge.event.RegistryEvent;
 
 public class InformatikacraftEntities 
 {
-	public static EntityType<?> REAPER = EntityType.Builder.create(Reaper::new, EntityClassification.MONSTER).build(Informatikacraft.MODID + ":reaper").setRegistryName(RegistryEvents.location("reaper"));
+	public static EntityType<?> REAPER = EntityType.Builder.create(Reaper::new, EntityClassification.CREATURE).build(Informatikacraft.MODID + ":reaper").setRegistryName(RegistryEvents.location("reaper"));
 	
 	public static void registerEntitySpawnEggs(final RegistryEvent.Register<Item> event) 
 	{
